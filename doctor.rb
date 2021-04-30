@@ -16,6 +16,11 @@ class Doctor
   # # doc = Doctor.new('name' => 'simon')
   # doc.age
 
+  def self.find(id)
+    results = DB.execute("SELECT * FROM doctors WHERE id = ?", id)
+  end
+
+
   def self.all
     DB.results_as_hash = true
     puts 'SELECTing from the DB.....'
