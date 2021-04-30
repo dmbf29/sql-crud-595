@@ -14,3 +14,8 @@ VALUES ('emilia', 26, 'Cardiac Sugery')
 -- Keyword: UPDATE
 UPDATE doctors SET age = 40, name = 'John Smith'
 WHERE id = 3
+
+-- DELETE
+-- Keyword: DELETE
+DELETE FROM doctors WHERE id = 32
+
