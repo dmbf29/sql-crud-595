@@ -1,0 +1,16 @@
+-- CRUD in SQL
+-- name, age, specialty
+
+-- READ
+-- Keyword: SELECT
+SELECT * FROM doctors
+
+-- CREATE
+-- Keyword: INSERT
+INSERT INTO doctors (name, age, specialty)
+VALUES ('emilia', 26, 'Cardiac Sugery')
+
+-- UPDATE
+-- Keyword: UPDATE
+UPDATE doctors SET age = 40, name = 'John Smith'
+WHERE id = 3
